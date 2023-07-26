@@ -24,6 +24,7 @@ RUN yes | pacman -Sy opencl-nvidia nvidia-utils gtk3 nvidia-settings
 
 WORKDIR /home
 
+RUN yes | pacman -Sy git
 RUN git clone https://github.com/opencv/opencv.git
 
 RUN mkdir /home/opencv/build
